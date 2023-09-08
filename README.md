@@ -99,7 +99,7 @@ The file structure is organized as follows:
 
 3. **Flask Web Application**: Flask-based web application that not only showcases data visualizations but also offers message classification functionality. Users can input messages through the web interface to get category predictions.
 
-## Licensing, Authors, Acknowledgements
+## Licensing, Authors & Acknowledgements
 
 Acknowledgments go to Udacity for providing the initial codebase and Appen for supplying the dataset utilized in this project.
 
