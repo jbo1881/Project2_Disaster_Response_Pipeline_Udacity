@@ -7,7 +7,7 @@
 - [Project Description](#project-description)
 - [Files Description](#files-description)
 - [Results](#results)
-- [Licensing, Authors & Acknowledgements](#laa)
+- [Licensing, Authors & Acknowledgements](#licensing-authors-acknowledgements)
 
 ## Installation
 
