@@ -32,7 +32,7 @@ Before running the project, ensure you have the following libraries installed:
 
 ## Project Motivation
 
-The project's objective is the categorization of disaster messages. To achieve this, I examined disaster data sourced from Appen with the aim of constructing an API model for message classification. Users can utilize a web application to input new messages and receive classifications across various categories. Additionally, the web app provides data visualizations for enhanced insights.
+The project's objective is the categorization of disaster messages. To achieve this, I examined disaster data sourced from [Appen](https://appen.com/) with the aim of constructing an API model for message classification. Users can utilize a web application to input new messages and receive classifications across various categories. Additionally, the web app provides data visualizations for enhanced insights.
 
 ## Project Components
 
@@ -66,5 +66,67 @@ A web application is provided, allowing users to interact with the trained model
 - Viewing the categories associated with the message.
 
  
-  ## Files Description
+## Files Description
+
+The file structure is organized as follows:
+
+	- README.md: read me file
+	- ETL Pipeline Preparation.ipynb: contains ETL pipeline preparation code
+	- ML Pipeline Preparation.ipynb: contains ML pipeline preparation code
+	- \app
+			- run.py: flask file to run the app
+		- \templates
+			- master.html: main page of the web application 
+			- go.html: result web page
+	- \data
+			- disaster_categories.csv: categories dataset
+			- disaster_messages.csv: messages dataset
+			- Disaster_Messages.db: disaster messages database
+			- process_data.py: ETL process
+	- \models
+			- train_classifier.py: ML classification code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
