@@ -101,7 +101,7 @@ The file structure is organized as follows:
 
 ## Licensing, Authors, Acknowledgements
 
-Credits must be given to Udacity for the starter codes and FigureEight for provding the data used by this project. 
+Acknowledgments go to Udacity for providing the initial codebase and Appen for supplying the dataset utilized in this project.
 
 ##
 
