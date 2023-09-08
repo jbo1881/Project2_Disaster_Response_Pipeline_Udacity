@@ -1,4 +1,4 @@
-# Project2_Disaster_Response_Pipeline_Udacity
+# Project 2: Disaster Response Pipeline (Udacity)
 
 ## Table of Contents
 
