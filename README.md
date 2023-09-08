@@ -9,26 +9,25 @@
 
 ## Installation
 
-The libraries used are: 
+Before running the project, ensure you have the following libraries installed:
 
-  - pandas: This library is used for data manipulation and analysis. It provides data structures like DataFrames and Series, making it easier to work with tabular data.
-  
-  - numpy: NumPy is a fundamental package for scientific computing with Python. It provides support for arrays, matrices, and mathematical functions.
-  
-  - sqlite3: This library is Python's built-in module for working with SQLite databases. It allows you to create, connect to, and interact with SQLite databases without the need for external installations.
-  
-  - sqlalchemy: SQLAlchemy is a popular SQL toolkit and Object-Relational Mapping (ORM) library for Python. It's used for working with SQL databases more abstractly.
-  
-  - sys: This module provides access to some variables used or maintained by the interpreter and to functions that interact with the interpreter. It is used to access command-line arguments.
-  
-  - re: The re module is used for regular expressions, which are powerful tools for pattern matching and text processing.
-  
-  - nltk: The Natural Language Toolkit is a library for working with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources, such as WordNet. It's used for text processing and natural language processing (NLP) tasks.
-  
-  - sklearn: Scikit-learn is a machine learning library for Python. It provides simple and efficient tools for data mining and data analysis. In the code, it is being used to create a machine learning model pipeline, perform data splitting, and evaluate the model's performance.
-  
-  - pickle: Python's pickle module is used for serializing and deserializing Python objects. In the code, it's used to save and load machine learning models.
+- **pandas**: This library is essential for data manipulation and analysis. It offers versatile data structures like DataFrames and Series, simplifying tabular data handling.
 
+- **numpy**: NumPy is a fundamental package for scientific computing with Python. It provides support for arrays, matrices, and mathematical functions, making complex computations efficient.
+
+- **sqlite3**: Python's built-in module for SQLite database management. It allows you to create, connect to, and manipulate SQLite databases without requiring external installations.
+
+- **sqlalchemy**: SQLAlchemy is a widely-used SQL toolkit and Object-Relational Mapping (ORM) library for Python. It abstracts SQL database interactions and simplifies database access.
+
+- **sys**: The sys module provides access to variables used or maintained by the Python interpreter. In this project, it's used for accessing command-line arguments.
+
+- **re**: The re module is employed for working with regular expressions, powerful tools for pattern matching and text manipulation.
+
+- **nltk**: The Natural Language Toolkit is a versatile library for processing human language data. It offers interfaces to numerous corpora and linguistic resources, such as WordNet, making it invaluable for text and natural language processing (NLP) tasks.
+
+- **sklearn**: Scikit-learn is a comprehensive machine learning library for Python. It simplifies data mining and analysis with efficient tools. In this code, it's used to create a machine learning model pipeline, perform data splitting, and assess model performance.
+
+- **pickle**: Python's pickle module is utilized for serializing and deserializing Python objects. It plays a crucial role in saving and loading machine learning models.
 
 
 ## Project Motivation
