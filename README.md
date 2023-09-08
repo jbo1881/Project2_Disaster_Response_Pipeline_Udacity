@@ -6,6 +6,8 @@
 - [Project Motivation](#project-motivation)
 - [Project Description](#project-description)
 - [Files Description](#files-description)
+- [Results](#results)
+- [Licensing, Authors & Acknowledgements](#laa)
 
 ## Installation
 
@@ -89,7 +91,19 @@ The file structure is organized as follows:
 
 
 
+## Results
 
+1. **ETL Pipeline**: ETL (Extract, Transform, Load) pipeline to read data from two CSV files, perform data cleaning operations, and subsequently store the processed data in an SQLite database.
+
+2. **Machine Learning Pipeline**: The project includes a machine learning pipeline designed to train a classifier capable of conducting multi-output classification across the 36 categories present in the dataset.
+
+3. **Flask Web Application**: Flask-based web application that not only showcases data visualizations but also offers message classification functionality. Users can input messages through the web interface to get category predictions.
+
+## Licensing, Authors, Acknowledgements
+
+Credits must be given to Udacity for the starter codes and FigureEight for provding the data used by this project. 
+
+##
 
 
 
