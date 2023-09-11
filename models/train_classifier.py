@@ -50,7 +50,7 @@ def load_data(database_filepath):
 
     # Separate features (messages) and target categories
     X = df['message']
-    y = df.iloc[:, 4:]  # Select columns related to target categories
+    y = df.loc[:, 'related':]  # Select columns related to target categories
 
     # Extract the category names for reference
     category_names = list(df.columns[4:])  # Columns 4 and onwards are category names
