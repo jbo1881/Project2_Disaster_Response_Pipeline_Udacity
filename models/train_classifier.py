@@ -50,7 +50,7 @@ def load_data(database_filepath):
 
     # Separate features (messages) and target categories
     X = df['message']
-    y = df.loc[:, 'related':]  # Select columns related to target categories
+    y = df.iloc[:, 4:]  # Select columns related to target categories
 
     # Extract the category names for reference
     category_names = list(df.columns[4:])  # Columns 4 and onwards are category names
@@ -191,7 +191,7 @@ def main():
     if len(sys.argv) == 3:
         database_filepath, model_filepath = sys.argv[1:]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))
-        X, Y, category_names = load_data(database_filepath)
+        X, y, category_names = load_data(database_filepath)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
         
         print('Building model...')
