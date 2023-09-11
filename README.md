@@ -73,6 +73,7 @@ A web application is provided, allowing users to interact with the trained model
 The file structure is organized as follows:
 
 	- README.md: read me file
+ 	- [GitHub Repository](https://github.com/yourusername/your-repo-name)
 	- ETL Pipeline Preparation.ipynb: contains ETL pipeline preparation code
 	- ML Pipeline Preparation.ipynb: contains ML pipeline preparation code
 	- \app
