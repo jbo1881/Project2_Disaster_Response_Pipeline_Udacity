@@ -6,6 +6,7 @@
 - [Project Motivation](#project-motivation)
 - [Project Description](#project-description)
 - [Files Description](#files-description)
+- [Instructions](#instructions)
 - [Results](#results)
 - [Licensing, Authors, Acknowledgements](#licensing-authors-acknowledgements)
 
@@ -90,7 +91,19 @@ The file structure is organized as follows:
 			- train_classifier.py: ML classification code
 
 
+## Instructions
 
+To run the application, follow the provided guidelines:
+
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/Disaster_Messages.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/Disaster_Messages.db`
+
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
 
 ## Results
 
