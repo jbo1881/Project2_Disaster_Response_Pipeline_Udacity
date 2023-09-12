@@ -191,11 +191,13 @@ def main():
     if len(sys.argv) == 3:
         database_filepath, model_filepath = sys.argv[1:]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))
-        X, y, category_names = load_data(database_filepath)
+        X, y, category_names = load_data(database_filepath)  # Load data here
+        
+        # Split the data into training and testing sets
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
         
         print('Building model...')
-        model = build_model()
+        model, X_train, X_test, y_train, y_test = build_model()  # Pass data to build_model
         
         print('Training model...')
         model.fit(X_train, y_train)
@@ -213,7 +215,6 @@ def main():
               'as the first argument and the filepath of the pickle file to '\
               'save the model to as the second argument. \n\nExample: python '\
               'train_classifier.py ../data/DisasterResponse.db classifier.pkl')
-
 
 if __name__ == '__main__':
     main()
