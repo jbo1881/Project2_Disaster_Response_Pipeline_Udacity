@@ -124,12 +124,9 @@ def build_model():
     # Create the GridSearchCV object for Naive Bayes
     cv = GridSearchCV(pipeline, param_grid=parameters, cv=5, scoring='accuracy')
 
-    model = cv
+    
 
-    # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y)
-
-    return model, X_train, X_test, y_train, y_test
+    return cv
 
 
 
@@ -197,7 +194,7 @@ def main():
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
         
         print('Building model...')
-        model, X_train, X_test, y_train, y_test = build_model()  # Pass data to build_model
+        model = build_model()  # Pass data to build_model
         
         print('Training model...')
         model.fit(X_train, y_train)
