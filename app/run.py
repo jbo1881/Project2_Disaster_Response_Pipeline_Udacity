@@ -38,40 +38,11 @@ model = joblib.load("classifier.pkl")
 @app.route('/index')
 def index():
     
-    # extract data needed for visuals
-    # TODO: Below is an example - modify to extract data for your own visuals
-    # genre_counts = df.groupby('genre').count()['message']
-    # genre_names = list(genre_counts.index)
-
     # Extract data needed for visuals - Genre distribution
     genre_counts = df['genre'].value_counts()
     genre_names = genre_counts.index.tolist()
-
     
-    # create visuals
-    # TODO: Below is an example - modify to create your own visuals
-    # graphs = [
-    #     {
-    #         'data': [
-    #             Bar(
-    #                 x=genre_names,
-    #                 y=genre_counts
-    #             )
-    #         ],
-
-    #         'layout': {
-    #             'title': 'Distribution of Message Genres',
-    #             'yaxis': {
-    #                 'title': "Count"
-    #             },
-    #             'xaxis': {
-    #                 'title': "Genre"
-    #             }
-    #         }
-    #     }
-    # ]
-
-            # Create visuals - Genre distribution pie chart
+    # Create visuals - Genre distribution pie chart
     genre_distribution_graph = {
         'data': [
             {
@@ -83,16 +54,42 @@ def index():
         ],
         'layout': {
             'title': 'Distribution of Message Genres',
-            'height': 500  
+            'height': 500
+        }
+    }
+    
+    # Extract data needed for the second visualization (example: word count by category)
+    category_word_counts = df.iloc[:, 4:].sum().sort_values(ascending=False)
+    category_names = category_word_counts.index.tolist()
+    
+    # Create the second visualization (example: bar chart of word count by category)
+    category_word_counts_graph = {
+        'data': [
+            {
+                'type': 'bar',
+                'x': category_names,
+                'y': category_word_counts,
+                'marker': {
+                    'color': 'skyblue'
+                }
+            }
+        ],
+        'layout': {
+            'title': 'Word Count by Category',
+            'yaxis': {
+                'title': 'Word Count'
+            },
+            'xaxis': {
+                'title': 'Category'
+            }
         }
     }
     
     graphs = [
-genre_distribution_graph,
-]
+        genre_distribution_graph,
+        category_word_counts_graph  
+    ]
 
-
-    
     # encode plotly graphs in JSON
     ids = ["graph-{}".format(i) for i, _ in enumerate(graphs)]
     graphJSON = json.dumps(graphs, cls=plotly.utils.PlotlyJSONEncoder)
